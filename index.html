@@ -4,67 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delson - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+            color: #fff;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
         }
         h1, h2, h3 {
             color: #4CAF50;
         }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 20px;
+        }
         .skills-list, .contact-info {
-            list-style-type: none;
+            list-style: none;
             padding-left: 0;
         }
         .skills-list li, .contact-info li {
-            margin: 5px 0;
-        }
-        .skill-status {
-            color: #FF5722;
+            background-color: rgba(255,255,255,0.05);
+            margin: 8px 0;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 5px;
         }
         a {
-            color: #4CAF50;
+            color: #00e6ac;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .resume-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .resume-link:hover {
+            background-color: #388e3c;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Hi, I'm Your Delson</h1>
-        <p>I’m a passionate student learning full-stack development and aspiring to grow as a software engineer.</p>
+        <h1>Hi, I'm Delson</h1>
+        <p>I am a passionate and driven software developer with a strong foundation in Core Java and a deep interest in full stack development. My goal is to evolve into a proficient Java Full Stack Developer by applying my knowledge in practical, real-world environments. I am enthusiastic about contributing to impactful projects, collaborating with experienced professionals, and continuously enhancing my skills in both backend and frontend technologies.</p>
 
         <h2>About Me</h2>
-        <p>I’m currently in my 3rd year, learning full-stack technologies and looking for internship opportunities to apply my skills and grow professionally.</p>
+        <p>I’m currently in my 4th year, learning full-stack technologies and looking for internship opportunities to apply my skills and grow professionally.</p>
 
         <h2>Skills</h2>
-        <p>I'm actively learning the following technologies:</p>
         <ul class="skills-list">
-            <li>Java (Basic knowledge, currently revising)</li>
-            <li>React (Learning the fundamentals)</li>
-            <li>Node.js (Learning server-side programming)</li>
-            <li>TypeScript (Starting to learn this week)</li>
-            <li>FastAPI (Learning basics)</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
             <li>Spring Framework (Planning to learn soon)</li>
-            <li>Flutter (Plan to explore after mastering web development)</li>
-            <li>GitHub (Used for version control)</li>
+            <li>VSCode, Eclipse IDE</li>
+            <li>Microsoft PowerPoint, Excel</li>
+            <li>Git and GitHub</li>
         </ul>
 
         <h2>Resume</h2>
         <p>You can download my resume below:</p>
-        <p><a href="https://drive.google.com/drive/folders/1TZQrgJqeu1zhQsOu9bbX61tjrGOn4Hu2?usp=drive_link" target="_blank">Download My Resume (PDF)</a></p>
+        <a href="https://drive.google.com/drive/folders/1TZQrgJqeu1zhQsOu9bbX61tjrGOn4Hu2?usp=sharing" target="_blank" class="resume-link">Download My Resume (PDF)</a>
 
         <h2>Contact</h2>
         <ul class="contact-info">
-            <li>Email: delsondsouza2004@gmail.com</li>
+            <li>Email: <a href="mailto:delsondsouza2004@gmail.com">delsondsouza2004@gmail.com</a></li>
             <li>GitHub: <a href="https://github.com/Delson27" target="_blank">github.com/Delson27</a></li>
             <li>LinkedIn: <a href="https://linkedin.com/in/dsouzadelson" target="_blank">linkedin.com/in/Delson Loyd Dsouza</a></li>
         </ul>
